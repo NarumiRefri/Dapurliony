@@ -1,0 +1,174 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color:black;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    height: 70px;
+}
+header h1{
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+header h1 a{
+    transition: .3s;
+}
+header h1 a:hover{
+    color: #ffffff;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    padding: 24px;
+    display: inline-block;
+}
+header ul li a{
+    transition: .3s;
+}
+header ul li a:hover{
+    color: #BEF8A3;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 0% auto;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 17px;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    transition: .2s;
+}
+.sidebar ul li a{
+    color: rgb(25, 24, 24);
+}
+.sidebar ul li{
+    padding: 24px;
+    transition: .3s;
+    transition-property : background-color;
+}
+.sidebar ul li:hover{
+    background-color: #ffffff;
+}
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+.banner{
+    background-color: rgb(255, 255, 255);
+    padding: 15px 0;
+}
+.section{
+    padding: 5px 0;
+}
+.banner img{
+    width: 1080px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner h2,
+.bannerspan,
+.banner p{
+    text-align: center;
+    color: black;
+}
+.banner h2{
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 28px;
+}
+.banner-left{
+    padding-left: 24px;
+}
+section h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+section h3::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+section h3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(66, 66, 66);
+    left: calc(50% - 20px);
+}
+#about p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+section img{
+    width: 1080px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.isi img{
+    padding: 5px;
+}
+.col-3{
+    width: 30, 33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+@media (max-width : 768px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    .banner img{
+        width:480px;
+    }
+    section img{
+        width:480px;
+    }
+}

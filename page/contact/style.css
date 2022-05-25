@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+.a{
+    text-align: center;
+}
+.icon{
+    text-align: center;
+    size: 100px;
+    padding: 200px;
+}
+.icon, .ul{
+    size: 200px;
+}

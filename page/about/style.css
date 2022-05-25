@@ -1,0 +1,19 @@
+*{
+    background-color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+.button{
+    text-align: center;
+}
+.isi{
+    text-align: center;
+}
+@media (max-width : 768px){
+    .iai img{
+        width:480px;
+    }
+    .isi img{
+        width:480px;
+    }
+}
