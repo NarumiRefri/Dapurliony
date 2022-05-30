@@ -1,13 +1,14 @@
 *{
     background-color: #ffffff;
     font-family: 'Quicksand', sans-serif;
-    color: black;
+    color: #000000;
 }
 .button{
     text-align: center;
 }
 .isi{
     text-align: center;
+
 }
 @media (max-width : 768px){
     .iai img{
